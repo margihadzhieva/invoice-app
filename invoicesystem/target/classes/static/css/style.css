@@ -1,0 +1,77 @@
+.bg-cinema {
+    width: auto;
+    height: auto;
+    background-color: #d0d1b3;
+}
+
+
+.navbar-wine {
+    background-color: #585858;
+}
+
+.navbar-brand.brand {
+    color: #FFFFFF;
+}
+
+.navbar-brand:hover {
+    color: #FFFFFF;
+}
+
+.navbar-brand:focus {
+    color: #FFFFFF;
+}
+
+.gray {
+    color: gray;
+}
+.white {
+    color: white;
+}
+
+.nav-link-blue {
+    color: #FFFFFF;
+}
+
+.nav-link-white:hover {
+    color:  #2ECCFA;
+}
+
+.nav-link-white:focus {
+    color: #2ECCFA;
+}
+
+.text-eventures {
+    color: #AFEEEE;
+}
+
+.nav-link-black {
+    color: #090909;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.nav-link-black:hover {
+    color: #090909;
+    cursor: pointer;
+}
+
+.nav-link-black:focus {
+    color: #090909;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+/*.dropdown-toggle::after {*/
+/*display:none*/
+/*}*
+
+.w-40 {
+    width: 40%;
+}
+
+.hr-2 {
+    height: 2px;
+}
