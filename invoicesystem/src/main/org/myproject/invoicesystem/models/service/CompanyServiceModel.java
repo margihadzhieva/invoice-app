@@ -1,15 +1,6 @@
-package org.myproject.invoicesystem.entities;
+package org.myproject.invoicesystem.models.service;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import java.sql.Blob;
-
-@Entity
-@Table(name = "company")
-public class Company extends BaseEntity {
-
-
+public class CompanyServiceModel {
     private String name;
 
     private String address;
@@ -22,8 +13,7 @@ public class Company extends BaseEntity {
 
     private String email;
 
-
-    public Company() {
+    public CompanyServiceModel() {
     }
 
     public String getName() {

@@ -1,15 +1,6 @@
-package org.myproject.invoicesystem.entities;
+package org.myproject.invoicesystem.models.view;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import java.sql.Blob;
-
-@Entity
-@Table(name = "company")
-public class Company extends BaseEntity {
-
-
+public class AllClientsViewModel {
     private String name;
 
     private String address;
@@ -20,10 +11,7 @@ public class Company extends BaseEntity {
 
     private String phone;
 
-    private String email;
-
-
-    public Company() {
+    public AllClientsViewModel() {
     }
 
     public String getName() {
@@ -64,13 +52,5 @@ public class Company extends BaseEntity {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }

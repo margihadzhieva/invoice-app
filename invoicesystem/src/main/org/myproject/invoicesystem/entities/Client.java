@@ -10,19 +10,17 @@ public class Client extends BaseEntity {
 
     private String name;
 
-    private String adress;
+    private String address;
 
     private String postcode;
 
-    private String nip;
+    private String uic;
 
     private String phone;
 
 
-
     public Client() {
     }
-
 
     public String getName() {
         return name;
@@ -32,20 +30,28 @@ public class Client extends BaseEntity {
         this.name = name;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public String getNip() {
-        return nip;
+    public String getPostcode() {
+        return postcode;
     }
 
-    public void setNip(String nip) {
-        this.nip = nip;
+    public void setPostcode(String postcode) {
+        this.postcode = postcode;
+    }
+
+    public String getUic() {
+        return uic;
+    }
+
+    public void setUic(String uic) {
+        this.uic = uic;
     }
 
     public String getPhone() {

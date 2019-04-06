@@ -1,7 +1,7 @@
 .jumbotron {
     background-color:white !important;}
 
-body {
+.body-background {
     background-image: url('../images/test.png');
 }
 
@@ -53,7 +53,7 @@ body {
     color: #e6b800;
 }
 
-.text-eventures {
+.text-invoice {
     color: #AFEEEE;
 }
 

@@ -1,14 +1,6 @@
-package org.myproject.invoicesystem.entities;
+package org.myproject.invoicesystem.models.binding;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import java.sql.Blob;
-
-@Entity
-@Table(name = "company")
-public class Company extends BaseEntity {
-
+public class CompanyAddBindingModel {
 
     private String name;
 
@@ -22,8 +14,7 @@ public class Company extends BaseEntity {
 
     private String email;
 
-
-    public Company() {
+    public CompanyAddBindingModel() {
     }
 
     public String getName() {
@@ -34,12 +25,12 @@ public class Company extends BaseEntity {
         this.name = name;
     }
 
-    public String getAddress() {
+    public String getAdress() {
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAdress(String adress) {
+        this.address = adress;
     }
 
     public String getPostcode() {
@@ -48,6 +39,14 @@ public class Company extends BaseEntity {
 
     public void setPostcode(String postcode) {
         this.postcode = postcode;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getUic() {
