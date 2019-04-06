@@ -1,42 +1,48 @@
 <th:block th:fragment="navbar-user">
 
-    <nav class="navbar navbar-expand-lg" style="background-color: #8ac5d2">
+    <nav class="navbar navbar-expand-lg navbar-custom">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand font-weight-bold" href="/">CineWorld</a>
+        <a class="navbar-brand font-weight-bold" href="/">EasyINVOICE</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown_cinema" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Cinemas
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" th:href="@{/cinema/add}">Add Cinema</a>
-                        <a class="dropdown-item" th:href="@{/cinema/all}">All Cinemas</a>
-                    </div>
+                    <a class="nav-link" href="#">New Invoice</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Films
+                        Clients
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" th:href="@{/film/add}">Add Film</a>
-                        <a class="dropdown-item" th:href="@{/film/all}">All Films</a>
+                        <a class="dropdown-item" th:href="@{/client/add}">Add Client</a>
+                        <a class="dropdown-item" th:href="@{/client/all}">All Clients</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown_product" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Film Sessions
+                        Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" th:href="@{/filmsession/add}">Add Film Session</a>
-                        <a class="dropdown-item" th:href="@{/filmsession/all}">All Film Sessions</a>
+                        <a class="dropdown-item" th:href="@{/product/add}">Add Product</a>
+                        <a class="dropdown-item" th:href="@{/product/all}">All Products</a>
                     </div>
                 </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown_company" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Company
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" th:href="@{/company/add}">Add Company</a>
+                        <a class="dropdown-item" th:href="@{/company/edit}">Edit Company</a>
+                    </div>
+                </li>
+
                 <li class="nav-item">
                     <form th:action="@{/logout}" th:method="POST">
                         <button type="submit" class="nav-link nav-link-black font-weight-bold">Logout</button>

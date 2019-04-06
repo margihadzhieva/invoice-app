@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head"></th:block>
+</head>
+<body>
+<header>
+    <th:block th:replace="fragments/navbar"></th:block>
+</header>
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+        <div class="col-lg-10 mx-auto">
+            <main class="mt-4">
+            <div class="jumbotron ">
+                <main class="mt-4">
+                    <h1 class="text-center font-weight-bold">Add Company</h1>
+                    <hr class="hr-2 bg-cinema">
+                    <form class="w-60 mx-auto" th:action="@{/company/add}" th:method="POST">
+                        <div class="name-and-uic-holder d-flex justify-content-between">
+                            <div class="form-group w-40">
+                                <label for="name">Company Name</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Company name ..."/>
+                            </div>
+                            <div class="form-group w-40">
+                                <label for="uic">Unified Identification Code</label>
+                                <input type="uic" name="uic" class="form-control" id="uic" placeholder="UIC ..."/>
+                            </div>
+                        </div>
+                        <div class="phone-and-email-holder d-flex justify-content-between">
+                            <div class="form-group w-40">
+                                <label for="phone">Phone</label>
+                                <input type="phone" name="phone" class="form-control" id="phone"
+                                       placeholder="Phone ..."/>
+                            </div>
+                            <div class="form-group w-40">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email..."/>
+                            </div>
+                        </div>
+                        <div class="address-and-postcode-holder d-flex justify-content-between">
+                            <div class="form-group w-40">
+                                <label for="address">First Name</label>
+                                <input type="text" name="address" class="form-control" id="address"
+                                       placeholder="Address..."/>
+                            </div>
+                            <div class="form-group w-40">
+                                <label for="postcode">Post Code</label>
+                                <input type="text" name="postcode" class="form-control" id="postcode" placeholder="Post Code..."/>
+                            </div>
+                        </div>
+                        <div class="button-holder d-flex justify-content-around">
+                            <button  class = "button1 "type="submit">Add Company</button>
+                        </div>
+                    </form>
+
+                </main>
+                <div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
