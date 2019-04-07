@@ -25,6 +25,8 @@ public class User extends BaseEntity implements UserDetails {
 
     private String email;
 
+    private Company company;
+
     private boolean isAccountNonExpired;
 
     private boolean isAccountNonLocked;
@@ -145,5 +147,14 @@ public class User extends BaseEntity implements UserDetails {
 
     public void setAuthorities(Set<UserRole> authorities) {
         this.authorities = authorities;
+    }
+
+    @OneToOne
+    public Company getCompany() {
+        return company;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }

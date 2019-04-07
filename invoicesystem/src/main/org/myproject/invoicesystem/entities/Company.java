@@ -1,8 +1,6 @@
 package org.myproject.invoicesystem.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Blob;
 
 @Entity
@@ -21,6 +19,8 @@ public class Company extends BaseEntity {
     private String phone;
 
     private String email;
+
+    private User userId;
 
 
     public Company() {
@@ -72,5 +72,15 @@ public class Company extends BaseEntity {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    public User getUserId() {
+        return userId;
+    }
+
+    public void setUserId(User userId) {
+        this.userId = userId;
     }
 }

@@ -14,6 +14,7 @@ public class CompanyAddBindingModel {
 
     private String email;
 
+    private String userId;
     public CompanyAddBindingModel() {
     }
 
@@ -71,5 +72,13 @@ public class CompanyAddBindingModel {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }
